@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+
+\title{CW 
+
+Gnu Linux}
+
+\date{12/1/2025}
+
+\author{Ehsan Esmaeili}
+
+\begin{document}
+\maketitle
+\newpage
+\section*{GNU's advantage:}
+
+\begin{itemize}
+    \item GNU is a free software project aiming to 
+    create a completely free operating system without 
+    reliance on proprietary software.
+    \item Free software means the freedom 
+    to run, study, modify, and share the software, 
+    opposing restrictive proprietary licenses.
+    \item The GNU General Public License (GPL) was developed 
+    to ensure software freedom for users and developers.
+\end{itemize}
+
+
+
+\section*{Kernal:}
+
+\subsection*{Kernal generally}
+
+The kernel is the core of an operating system 
+that manages communication between software and hardware. 
+Its main tasks include managing hardware 
+resources, processes, memory, and devices.
+\subsection*{Kernal module}
+
+Kernel modules are extensions that enhance 
+the functionality of the kernel without requiring 
+a full rebuild. They are used to add device 
+drivers or specialized features.
+
+\section*{Systemd:}
+
+\begin{itemize}
+    \item Systemd is an init system responsible for 
+    managing the system boot process and services. 
+    It handles background processes, daemons, 
+    and system stability.
+    \item Some criticize Systemd for violating 
+    the Unix philosophy of creating small, 
+    modular tools for specific tasks, arguing 
+    that it adds unnecessary complexity to the system.
+    \item Systemd services are processes running in the 
+    background to handle tasks like network management, 
+    task scheduling, and system functionalities.
+
+    
+\end{itemize}
+
+\section*{Graphicx:}
+
+\subsection*{Display server protocol}
+
+A display server protocol is an interface between 
+the operating system and the graphics hardware to 
+render visuals on the screen. Examples include X11 and Wayland.
+\subsection*{Desktop environment or windows man-ager}
+
+A window manager controls the appearance and behavior 
+of windows, while a desktop environment is a 
+complete user interface that includes 
+a window manager, menus, tools, and settings for 
+a full experience.
+\subsection*{Some examples}
+
+Window managers: i3, Openbox, Fluxbox
+Desktop environments: GNOME, KDE Plasma, XFCE
+
+
+
+
+\section*{Ricing:}
+
+\subsection*{Meaning of ricing}
+
+
+Ricing refers to customizing 
+the graphical appearance of a 
+Linux system to make it visually appealing. 
+It involves tweaking themes, icons, 
+window manager configurations.
+\subsection*{Favorite ricing}
+
+\begin{itemize}
+    \item Openbox
+    \item XFCE 
+\end{itemize}
+
+\section*{Suckless software:}
+
+\subsection*{Explane of Suckless software}
+
+Suckless Software is a collection of 
+lightweight and minimalist tools designed 
+for simplicity, speed, and usability by advanced users.
+\subsection*{Philosophy of software}
+
+Their philosophy revolves around minimalism, 
+adhering to the principle of "less is more" 
+to make code readable, simple, and user-modifiable.
+
+\section*{Shells:}
+
+\subsection*{POSIX-compliant shell}
+
+A POSIX-compliant shell, like Bash or Zsh, 
+adheres to POSIX standards for ensuring 
+compatibility and consistent behavior across v
+arious operating systems.
+
+
+\subsection*{Use full command:}
+
+
+\subsubsection*{(A):}
+
+grep -r "hello" testDir | wc -l
+
+
+\subsubsection*{(B):}
+
+ls -l  allthefiles.txt
+
+\subsubsection*{(C):}
+
+find testDir -type f -name "*.c" | wc -l
+
+
+\end{document}
