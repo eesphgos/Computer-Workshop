@@ -1,0 +1,298 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz}
+\title{Computer Workshop
+
+Assignment 3: Core Git}
+
+\date{Fall of 4031}
+
+\author{Dr. MalekiMajd}
+
+\begin{document}
+
+
+\pagestyle{fancy}
+
+\fancyhead[L]{ \thepage}
+
+\maketitle
+\pagenumbering{global}
+
+\newpage
+
+\tableofcontents
+
+\pagenumbering{arabic}
+
+\newpage
+
+\section*{Assignment Notes:}
+
+\begin{enumerate}
+    \item Some questions may include material not yet covered in class. These
+questions are meant to help you develop your research skills.
+
+    \item homework is strictly forbidden. If caught, both students involved will receive a score of 0 on this assignment
+    
+    \item If you have any questions, feel free to ask in the course’s Telegram group
+to benefit your fellow classmates.
+
+\item It’s recommended to visit Git’s official documentation for additional information on its commands.
+
+\end{enumerate}
+
+\newpage
+
+\section{More Git commands}
+
+\subsection{Cloning}
+In this section, you will be learning about a core feature in Git called cloning.
+read about cloning and answer the following questions:
+
+
+\begin{enumerate}
+    \item What does cloning a repository mean?
+    \item What is the command for cloning a GitHub repository?
+    \item Does cloning a repository retain its commit history?
+\end{enumerate}
+
+\subsection{Forking in Open-Source
+Projects and GitHub}
+
+In this section, you will explore the concept of forking in the context of opensource projects on GitHub. Read about forking and answer the following questions:
+\begin{enumerate}
+    \item What does it mean to fork a repository on GitHub?
+    \item Describe the process of forking a repository.
+    \item How does forking contribute to collaborative development in open-source
+projects?
+
+    \item After forking a repository, how can you keep your fork up-to-date with
+the original repository’s changes?
+
+    \item How can you contribute to the original repository after forking it?
+\end{enumerate}
+
+\subsection{Git Resetting}
+
+In this section, you will delve into the Git command git reset. Read about
+Git resetting and answer the following questions:
+
+\begin{enumerate}
+    \item . What is the purpose of the git reset command in Git?
+    \item Describe the difference between git reset and git revert.
+    \item Explain the three primary modes of git reset (--soft, --mixed, and
+--hard) and how they affect the staging area and working directory.
+
+\end{enumerate}
+
+\newpage
+
+\section{Merging and Rebasing
+}
+In this section, you will be given a GitHub URL that contains a repository that
+you need to fork and make your own necessary changes on them and push them
+to your own GitHub repository.
+
+\href{Repository}{URL: https://github.com/MiliAxe/cw1402\_proj/tree/master}
+
+Follow the necessary instructions on the projects given below.
+
+
+\subsection{First project}
+In this project, you are given a project that consists of three branches called
+master (main branch), feature-one and bug-fix. You have to first merge bug-fix
+into feature-one and after that, merge the branch feature-one into master
+
+Here is a demonstration of how this project looks like:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Screenshot 2024-12-18 071751.png}
+    \caption{Project 1}
+    \label{}
+\end{figure}
+% \begin{center}
+% \begin{tikzpicture}[node distance = {14mm},thick,main/.style = {draw , circle}]
+
+    
+
+% \node[main](1){$A$};
+% \node[main](2)[above right of=1]{$A_1$};
+% \node[main](3)[below right of=2]{$B$};
+% \node[main](4)[above right of=3]{$B_1$};
+% \node[main](5)[below right of=4]{$C$};
+% \node[main](6)[above right of=5]{$C_1$};
+% \node[main](7)[below right of=6]{$D$};
+% \node[main](8)[above right of=7]{$D_1$};
+% \node[main](9)[below right of=8]{$E$};
+% \node[main](10)[above right of=4]{$A_1$};
+
+% \draw[->](1) -- (2);
+% \draw[->](1) -- (3);
+% \draw[->](3) -- (5);
+% \draw[->](5) -- (7);
+% \draw[->](7) -- (9);
+% \draw[->](2) -- (4);
+% \draw[->](4) -- (6);
+% \draw[->](6) -- (8);
+% \draw[->](4) -- (10);
+
+% \end{tikzpicture}
+% \end{center}
+After merging the branches, your project should look like this:
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Screenshot 2024-12-18 071805.png}
+    \caption{Prpject 1 after merging}
+    \label{}
+\end{figure}
+% \begin{center}
+    
+% \begin{tikzpicture}[node distance = {14mm},thick,main/.style = {draw , circle}]
+% \node[main](1){$A$};
+% \node[main](2)[above right of=1]{$A_1$};
+% \node[main](3)[below right of=2]{$B$};
+% \node[main](4)[above right of=3]{$B_1$};
+% \node[main](5)[below right of=4]{$C$};
+% \node[main](6)[above right of=5]{$C_1$};
+% \node[main](7)[below right of=6]{$D$};
+% \node[main](8)[above right of=7]{$D_1$};
+% \node[main](9)[below right of=8]{$E$};
+% \node[main](10)[above right of=4]{$A_1$};
+% \node[main](11)[above right of=9]{$E_1$};
+% \node[main](12)[below right of=11]{$F$};
+% \draw[->](1) -- (2);
+% \draw[->](1) -- (3);
+% \draw[->](3) -- (5);
+% \draw[->](5) -- (7);
+% \draw[->](7) -- (9);
+% \draw[->](2) -- (4);
+% \draw[->](4) -- (6);
+% \draw[->](6) -- (8);
+% \draw[->](4) -- (10);
+% \draw[->](9) -- (12);
+% \draw[->](8) -- (11);
+% \draw[->](10) -- (11);
+% \draw[->](11) -- (12);
+% \end{tikzpicture}
+
+% \end{center}
+
+\paragraph{NOTE: }In case of any conflicts, keep the content of both of the branches.
+\subsection{Second project}
+In this project, you are given a project that consists of three branches called
+master (main branch), feature-one and bug-fix. You have to rebase bug-fix into
+feature-one and after that, rebase the branch feature-one into master.
+
+Here is a demonstration of how this project looks like after and before rebasing:
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Screenshot 2024-12-18 071751.png}
+    \caption{Project 1}
+    \label{}
+\end{figure}
+% \begin{center}
+    
+
+% \begin{tikzpicture}[node distance = {14mm},thick,main/.style = {draw , circle}]
+% \node[main](1){$A$};
+% \node[main](2)[above right of=1]{$A_1$};
+% \node[main](3)[below right of=2]{$B$};
+% \node[main](4)[above right of=3]{$B_1$};
+% \node[main](5)[below right of=4]{$C$};
+% \node[main](6)[above right of=5]{$C_1$};
+% \node[main](7)[below right of=6]{$D$};
+% \node[main](8)[above right of=7]{$D_1$};
+% \node[main](9)[below right of=8]{$E$};
+% \node[main](10)[above right of=4]{$A_1$};
+
+% \draw[->](1) -- (2);
+% \draw[->](1) -- (3);
+% \draw[->](3) -- (5);
+% \draw[->](5) -- (7);
+% \draw[->](7) -- (9);
+% \draw[->](2) -- (4);
+% \draw[->](4) -- (6);
+% \draw[->](6) -- (8);
+% \draw[->](4) -- (10);
+% \end{tikzpicture}
+
+% \end{center}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Screenshot 2024-12-18 071838.png}
+    \caption{Project 2 after rebasing}
+    \label{}
+\end{figure}
+% \begin{center}
+    
+
+% \begin{tikzpicture}[node distance = {14mm},thick,main/.style = {draw , circle}]
+% \node[main](1){$A$};
+% \node[main](2)[ right of=1]{$B$};
+% \node[main](3)[ right of=2]{$C$};
+% \node[main](4)[ right of=3]{$D$};
+% \node[main](5)[ right of=4]{$E$};
+% \node[main](6)[ right of=5]{$A_1$};
+% \node[main](7)[ right of=6]{$B_1$};
+% \node[main](8)[below of=7]{$C_1$};
+% \node[main](9)[below of=6]{$D_1$};
+% \node[main](10)[below of=5]{$A_2$};
+
+% \draw[->](1) -- (2);
+% \draw[->](2) -- (3);
+% \draw[->](3) -- (4);
+% \draw[->](4) -- (5);
+% \draw[->](5) -- (6);
+% \draw[->](6) -- (7);
+% \draw[->](7) -- (8);
+% \draw[->](8) -- (9);
+% \draw[->](9) -- (10);
+
+
+% \end{tikzpicture}
+
+% \end{center}
+
+\paragraph{NOTE: }In case of any conflicts, keep the content of both of the branches.
+
+
+\paragraph{QUESTION: }Is it possible to have two forks of the same repository on your
+GitHub account? If yes, how can you do that? If no, provide a solution using
+cloning and adding a remote repository.
+\subsection{ Instructions}
+For better understanding of what should be done in this section, here are some
+instructions:
+\begin{enumerate}
+    \item Head to the GitHub URL provided
+    \item Fork the repository provided and rename the repository to the format
+HW\_STUDENTNO
+    \item Apply the necessary changes stated in the sections. 
+    \item Push the changes to your forked repository
+    \item Provide the URL to your GitHub repository in your assignment’s PDF as
+well as the commands you applied on the repository.
+
+\end{enumerate}
+
+\paragraph{NOTE: }You should provide two URLs in your assignment’s PDF, one for each
+project.
+
+\newpage
+\section{the end of the project}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{qq.png}
+    \caption{picture of test}
+    \label{}
+\end{figure}
+\end{document}
