@@ -1,0 +1,97 @@
+\documentclass{article}
+
+
+\title{MORE ADVANCED GIT}
+
+\date{2024 DESAMBER 4}
+
+\author{Ehsan Esmaeili}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section*{More git commands}
+
+\subsection*{Cloning}
+\begin{enumerate}
+    \item what the cloning means ? 
+
+    cloning means you can save a copy of a project with all branch and commits , ets in your system as local .
+
+    therefor you can add commits offline and send your new commit to orginal file of project later .
+    \item what the commands make clone ?
+
+    we can use this command to do it.
+    
+    git clone (url of project) 
+    \item cloning a repasitury retain the commit history ?
+
+    yes when you clone a ripasitury the history of repasitury are clone in your local project.
+\end{enumerate}
+\subsection*{Fork in open sourse project and git hub}
+\begin{enumerate}
+    \item means of fork :
+    forking a project in github means you get a personal copy of project and make cheange in copy whisout changing in main project of anyone .
+
+    this very helpfull  for open sourse project becaus encourages developer to help other in the open sourse project.
+    
+    \item process of forking :
+    for forking you should go to page of repasitury at github and select fotk in page and fork will be save in your account .
+
+    them you make change this fork and commit them , when you commit them they are will save in your account as your project.
+    
+    \item forking contibute in collaborate ptoject :
+    \begin{itemize}
+        \item encouraging expeimentation:
+        developer can try any idea without worry about breaking the orginal project. 
+        \item facilitating contributions:
+        the developers can make pull request for suggestion to make project better of pull request will be accept the suggest will atomaticaly apply in project.
+
+    \end{itemize}
+    \item keeping update cheanges with orginal repasitury :
+    we will at first fetch the main repasitury in local project them merg 
+    the local changes in maked remote of main project and push remote to apply cheanges in main repasitury.
+    \item contribute to the orginal repository after forking :
+    to help project at first fork project so make changes and commit it ,
+    them push commited changes in git hub.
+
+    after we pushing commited chage we make a pull request and send it afer sending pull request and acces by manager of project the changes will be appled in repasitory.
+    
+\end{enumerate}
+\subsection*{Git resetting}
+
+\begin{enumerate}
+    \item porpus of git reset command in git :
+    it can help us when we want to cancelling new changes and commits and want to go to which commit is exist before.
+    \item diffrece between git reset and git revert :
+    git reset delete the commit which you want fix it and you return to before commit and rewrite the code to fix buges.
+
+    git revert make a new commit that commit neutre commit which has buges .
+    
+    therefore better you use git revert in your projects .
+    \item explaning the tree primary mode of git reset :
+
+\begin{itemize}
+    \item git reset --soft :
+
+    this command use when you could return a commit but retain ready cheanges of commit .
+    \item git reset --mixed (defult mode):this commit use when you could restage a commit but you could have this commit . 
+    \item git reset --hard :
+    this command use when you want completely discard all changes with out retain any things . 
+    
+\end{itemize}
+    
+\end{enumerate}
+
+\section*{Merging and rebasing}
+
+\subsection*{There are we have two link to see merging in project one and rebasing in project two . }
+
+\begin{itemize}
+\item link one :
+
+\item link two :
+\end{itemize}
+
+\end{document}
